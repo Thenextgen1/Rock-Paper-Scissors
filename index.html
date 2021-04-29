@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rps</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <main>
+        <section id="total-game">
+            <h1 class="title">Player vs Computer</h1>
+            <h2 class="sub-title">The winner is determined after 5 rounds</h2>
+            <section class="game-container">
+                <ul>
+                    <li class="rock"><i class="fas fa-hand-rock" id="rock"></i></li>
+                    <li class="paper"><i class="fas fa-scroll" id="paper"></i></li>
+                    <li class="scissors"><i class="fas fa-hand-scissors" id="scissors"></i></li>
+                </ul>
+
+            </section>
+            <div class="score-count">
+                <div class="you">
+                    <p>You</p>
+                    <p class="player-score">0</p>
+                </div>
+                <div class="computer">
+                    <p>Computer</p>
+                    <p class="computer-score">0</p>
+                </div>
+            </div>
+            <footer>
+                <p class="game-remark">Game remark</p>
+            </footer>
+        </section>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

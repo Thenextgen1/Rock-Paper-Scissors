@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+    --intro: hsl(217, 28%, 15%);
+    --main: hsl(218, 28%, 13%);
+--footer: hsl(216, 53%, 9%);
+--testimonials: hsl(219, 30%, 18%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0; */
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(219, 30%, 18%);
+}
+
+.game-container {
+    padding-top: 3em;
+    color: white;
+}
+.title {
+    text-align: center;
+    font-size: 3em;
+    padding-top: 20px;
+    color: white;
+}
+.sub-title {
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+.game-container ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+ul li {
+    list-style-type: none; 
+    display: inline-block;
+    cursor: pointer;
+}
+.fa-hand-rock,
+.fa-scroll,
+.fa-hand-scissors {
+   font-size: 8em;
+   padding: 10px 20px;
+   
+
+}
+.fa-hand-rock {
+    color: #945555d5;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.fa-scroll {
+    color: ivory;
+    border: 1px solid #fff98c;
+    border-radius: 20px;
+}
+
+.fa-hand-scissors {
+    color: #be6a15;
+    border: 1px solid #ebe2e2;
+    border-radius: 15px;
+}
+
+.fa-hand-rock:hover,
+.fa-scroll:hover,
+.fa-hand-scissors:hover {
+    box-shadow: 10px 4px 30px 4px rgba(255,255,255,0.75);
+-webkit-box-shadow: 10px 4px 30px 4px rgba(255,255,255,0.75);
+-moz-box-shadow: 10px 4px 30px 4px rgba(255,255,255,0.75);
+
+}
+.score-count {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+.you p,
+.computer p {
+    text-transform: uppercase;
+    color: white;
+    font-size: 3em;
+}
+.you p:nth-of-type(2),
+.computer p:nth-of-type(2) {
+    text-align: center;
+}
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+button {
+    background: #52618c;
+    background-image: -webkit-linear-gradient(top, #52618c, #abc7d9);
+    background-image: -moz-linear-gradient(top, #52618c, #abc7d9);
+    background-image: -ms-linear-gradient(top, #52618c, #abc7d9);
+    background-image: -o-linear-gradient(top, #52618c, #abc7d9);
+    background-image: linear-gradient(to bottom, #52618c, #abc7d9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 23px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    position: relative;
+    left: 45%;
+    border: none;
+}
+button:hover {
+    background: #4b8385;
+    background-image: -webkit-linear-gradient(top, #4b8385, #7fbee8);
+    background-image: -moz-linear-gradient(top, #4b8385, #7fbee8);
+    background-image: -ms-linear-gradient(top, #4b8385, #7fbee8);
+    background-image: -o-linear-gradient(top, #4b8385, #7fbee8);
+    background-image: linear-gradient(to bottom, #4b8385, #7fbee8);
+    text-decoration: none;
+}
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+@media(max-width: 396px) {
+    .title {
+        font-size: 1.8em;
+    }
+    .sub-title {
+        font-size: 0.5em;
+    }
+    .fa-hand-rock,
+.fa-scroll,
+.fa-hand-scissors {
+   font-size: 4em;
+   padding: 5px 10px;
+   
+}
+.you p,
+.computer p {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1em;
+}
+.game-remark {
+    font-size: 1em;
+}
+button {
+    left: 30%;
+    border: none;
+}
+}
